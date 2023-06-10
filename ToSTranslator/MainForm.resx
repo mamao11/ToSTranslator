@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="minLicense.Text" xml:space="preserve">
+    <value>「アプリケーション利用者向け制限事項」
+
+１　アプリケーション利用者は、商用目的や公序良俗に反する目的のためにアプリケーションを利用することはできません。ただし、アプリケーションを利用して、Wikipedia等のCreative Commons License の文書や、 GNU General Public License, MIT License, Apache License, BSD License 等のオープンソースソフトウェアの文書等の公益性が高い文書であって、アプリケーション利用者がその文書の自動翻訳結果や修正結果を利用者や目的の制限なく一般に無償公開する場合には、当該文書のライセンスが当該文書の利用の目的や範囲等を限定していない場合であっても、これによらず利用できます。また、大学等での研究・教育機関における非営利でアカデミックな個人利用の場合も、本アプリケーションを利用可能です。
+
+２　アプリケーションの不適切な利用が発見された場合には、予告無しにアプリケーションの機能を制限することがあります。
+
+３　利用回数に上限が設けられることがあります。
+
+４　自動翻訳サービス（以下「本サービス」という。）の提供期間は保証されません。
+
+５　自動翻訳のために入力されたテキストや用語や対訳等の情報の一切については情報通信研究機構（以下「NICT」という。）のサーバーに記録されます。このNICTのサーバーに記録されたデータは、NICTにおいて自動翻訳技術の改良のために利用される場合があります。その場合、入力テキストや対訳がそのまま公開されることはありません。また本サービスに個人情報やプライバシーを含む情報、営業秘密等、第三者に対して秘密にしておく必要がある情報は入力しないでください。
+
+「免責事項」
+
+１　情報通信研究機構（以下「NICT」という。）は、自動翻訳サービス（以下「本サービス」という。）を利用した自動翻訳結果の正確性を保証するものではありません。
+
+２　本サービスや関連するソフトウェア又はドキュメントの使用により利用者等に損害が生じた場合でもNICTは一切責任を負いません。
+
+３　NICTは、日本を含む全ての国や地域で本サービスや関連するソフトウェア又はドキュメントの利用が合法であることを保証するものではありません。</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>各サービスでは個人情報を送信しないように求めていますが、本アプリケーションではチャットの
+内容を自動送信するため、個人情報の有無を判別できません。
+DeepLは個人情報の送信があり得る場合、有償サービスの契約を求めています。
+どうしても無償版で利用したい場合はこの旨を理解した上でご利用ください。
+
+なお本アプリケーションを利用したことにより生じるいかなる損害についても、理由の如何に関わ
+らず作者は責任を負わないものとします。</value>
+  </data>
+</root>

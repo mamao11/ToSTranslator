@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ToSTranslator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MIN_proxy_id" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MIN_proxy_password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MIN_API_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mt-auto-minhon-mlt.ucri.jgn-x.jp/api/mt/voicetraNT_ko_ja/</Value>
+    </Setting>
+    <Setting Name="MIN_proxy_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="MIN_proxy" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MIN_API_自動翻訳" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DeepL_API_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://api-free.deepl.com/v2/translate</Value>
+    </Setting>
+    <Setting Name="RENDER_STYLE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">APPEND</Value>
+    </Setting>
+    <Setting Name="CAUTION" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MIN_SITE_URL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://mt-auto-minhon-mlt.ucri.jgn-x.jp/</Value>
+    </Setting>
+    <Setting Name="DeepL_SITE_URL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://www.deepl.com/translator</Value>
+    </Setting>
+    <Setting Name="MIN_API_USER" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MIN_API_KEY" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MIN_API_SECRET" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DeepL_API_KEY" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="API_TYPE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

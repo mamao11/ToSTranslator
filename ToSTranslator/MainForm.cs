@@ -201,7 +201,7 @@ namespace ToSTranslator
                 }
                 else
                 {
-                    //翻訳成功したらグレーに
+                    //翻訳成功したら黒に
                     nd.ForeColor = Color.Black;
                     if (nd.Nodes.Count > 0)
                     {

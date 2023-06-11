@@ -184,7 +184,7 @@ namespace ToSTranslator
                         if (item.source_name == item.translated_name && item.source_text == item.translated_text)
                         {
                             //配信完了扱いにする
-                            PushTranslateEvent(item, EventType.TranslateReturn);
+                            PushTranslateEvent(item, EventType.TranslateEnd);
                         }
                         else
                         {

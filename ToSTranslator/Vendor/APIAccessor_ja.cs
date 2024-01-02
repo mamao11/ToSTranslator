@@ -930,7 +930,7 @@ namespace ToSTranslator
                         //応答のストリームをテキストに書き出し
                         if (contentText == null)
                             throw new ArgumentNullException("contentText");
-                        if (webRes.ContentLength > 0)
+                        //if (webRes.ContentLength > 0)
                         {
                             using (StreamReader sr = new StreamReader(webRes.GetResponseStream()))
                             {

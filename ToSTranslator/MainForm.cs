@@ -257,7 +257,7 @@ namespace ToSTranslator
         //閉じる処理
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("終了します。よろしいですか？", Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MySettings.EXIT_CONFIRM &&  MessageBox.Show("終了します。よろしいですか？", Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 //キャンセル
                 e.Cancel = true;

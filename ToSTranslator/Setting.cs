@@ -42,6 +42,9 @@ namespace ToSTranslator
                 cmbMsgReplace.SelectedIndex = 0;
                 GlobalV.renderStyle = GlobalV.RenderStyle.APPEND;
             }
+
+            cbExitConfirm.Checked = MySettings.EXIT_CONFIRM;
+
             _editing = false;
 
         }
@@ -65,6 +68,8 @@ namespace ToSTranslator
                 MySettings.RENDER_STYLE = "REPLACE";
                 GlobalV.renderStyle = GlobalV.RenderStyle.REPLACE;
             }
+
+            MySettings.EXIT_CONFIRM = cbExitConfirm.Checked;
 
             MySettings.Save();
             _editing = false;

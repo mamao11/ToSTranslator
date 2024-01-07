@@ -31,6 +31,7 @@ namespace ToSTranslator
         {
             this.settingPanel = new System.Windows.Forms.TabControl();
             this.tabMIN = new System.Windows.Forms.TabPage();
+            this.minLink = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.minUSER = new System.Windows.Forms.TextBox();
             this.minSECRET = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@ namespace ToSTranslator
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabDeepL = new System.Windows.Forms.TabPage();
+            this.deeplLink = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.deepKEY = new System.Windows.Forms.TextBox();
             this.deepURL = new System.Windows.Forms.TextBox();
@@ -51,8 +53,7 @@ namespace ToSTranslator
             this.cmbMsgReplace = new System.Windows.Forms.ComboBox();
             this.cancel = new System.Windows.Forms.Button();
             this.ok = new System.Windows.Forms.Button();
-            this.minLink = new System.Windows.Forms.LinkLabel();
-            this.deeplLink = new System.Windows.Forms.LinkLabel();
+            this.cbExitConfirm = new System.Windows.Forms.CheckBox();
             this.settingPanel.SuspendLayout();
             this.tabMIN.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -83,6 +84,19 @@ namespace ToSTranslator
             this.tabMIN.Size = new System.Drawing.Size(584, 226);
             this.tabMIN.TabIndex = 0;
             this.tabMIN.Text = "みんなの自動翻訳";
+            // 
+            // minLink
+            // 
+            this.minLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minLink.AutoSize = true;
+            this.minLink.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.minLink.Location = new System.Drawing.Point(443, 10);
+            this.minLink.Name = "minLink";
+            this.minLink.Size = new System.Drawing.Size(133, 13);
+            this.minLink.TabIndex = 8;
+            this.minLink.TabStop = true;
+            this.minLink.Text = "みんなの自動翻訳サイト";
+            this.minLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.minLink_LinkClicked);
             // 
             // groupBox1
             // 
@@ -183,6 +197,19 @@ namespace ToSTranslator
             this.tabDeepL.TabIndex = 1;
             this.tabDeepL.Text = "DeepL";
             // 
+            // deeplLink
+            // 
+            this.deeplLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.deeplLink.AutoSize = true;
+            this.deeplLink.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.deeplLink.Location = new System.Drawing.Point(447, 10);
+            this.deeplLink.Name = "deeplLink";
+            this.deeplLink.Size = new System.Drawing.Size(129, 13);
+            this.deeplLink.TabIndex = 9;
+            this.deeplLink.TabStop = true;
+            this.deeplLink.Text = "DeepL翻訳ツールサイト";
+            this.deeplLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.deepKEY);
@@ -233,6 +260,7 @@ namespace ToSTranslator
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cbExitConfirm);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cmbMsgReplace);
             this.panel1.Controls.Add(this.cancel);
@@ -266,7 +294,7 @@ namespace ToSTranslator
             "チャット文字を置き換える"});
             this.cmbMsgReplace.Location = new System.Drawing.Point(55, 12);
             this.cmbMsgReplace.Name = "cmbMsgReplace";
-            this.cmbMsgReplace.Size = new System.Drawing.Size(193, 23);
+            this.cmbMsgReplace.Size = new System.Drawing.Size(181, 23);
             this.cmbMsgReplace.TabIndex = 2;
             // 
             // cancel
@@ -295,31 +323,17 @@ namespace ToSTranslator
             this.ok.UseVisualStyleBackColor = true;
             this.ok.Click += new System.EventHandler(this.ok_Click);
             // 
-            // minLink
+            // cbExitConfirm
             // 
-            this.minLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minLink.AutoSize = true;
-            this.minLink.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.minLink.Location = new System.Drawing.Point(443, 10);
-            this.minLink.Name = "minLink";
-            this.minLink.Size = new System.Drawing.Size(133, 13);
-            this.minLink.TabIndex = 8;
-            this.minLink.TabStop = true;
-            this.minLink.Text = "みんなの自動翻訳サイト";
-            this.minLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.minLink_LinkClicked);
-            // 
-            // deeplLink
-            // 
-            this.deeplLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.deeplLink.AutoSize = true;
-            this.deeplLink.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.deeplLink.Location = new System.Drawing.Point(447, 10);
-            this.deeplLink.Name = "deeplLink";
-            this.deeplLink.Size = new System.Drawing.Size(129, 13);
-            this.deeplLink.TabIndex = 9;
-            this.deeplLink.TabStop = true;
-            this.deeplLink.Text = "DeepL翻訳ツールサイト";
-            this.deeplLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.cbExitConfirm.AutoSize = true;
+            this.cbExitConfirm.Checked = true;
+            this.cbExitConfirm.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbExitConfirm.Location = new System.Drawing.Point(252, 15);
+            this.cbExitConfirm.Name = "cbExitConfirm";
+            this.cbExitConfirm.Size = new System.Drawing.Size(87, 16);
+            this.cbExitConfirm.TabIndex = 4;
+            this.cbExitConfirm.Text = "終了確認(&E)";
+            this.cbExitConfirm.UseVisualStyleBackColor = true;
             // 
             // Setting
             // 
@@ -375,5 +389,6 @@ namespace ToSTranslator
         private System.Windows.Forms.ComboBox cmbMsgReplace;
         private System.Windows.Forms.LinkLabel minLink;
         private System.Windows.Forms.LinkLabel deeplLink;
+        private System.Windows.Forms.CheckBox cbExitConfirm;
     }
 }

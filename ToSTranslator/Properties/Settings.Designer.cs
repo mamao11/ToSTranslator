@@ -193,5 +193,17 @@ namespace ToSTranslator.Properties {
                 this["API_TYPE"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool EXIT_CONFIRM {
+            get {
+                return ((bool)(this["EXIT_CONFIRM"]));
+            }
+            set {
+                this["EXIT_CONFIRM"] = value;
+            }
+        }
     }
 }

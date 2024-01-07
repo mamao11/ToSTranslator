@@ -448,7 +448,7 @@ namespace ToSTranslator
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(750, 500);
             this.Name = "MainForm";
-            this.Text = "ToS 翻訳";
+            this.Text = "ToS 翻訳 v1.0.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.minCaution.ResumeLayout(false);

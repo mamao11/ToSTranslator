@@ -239,11 +239,12 @@ namespace ToSTranslator
                 mpt = SplitMessage(src);
 
                 //翻訳対象パーツのみを抽出
-                _logger.Debug(item.chat_id + ":pickup");
                 trans = mpt.FindAll(mp => mp.pickup == true);
+                _logger.Debug(item.chat_id + ":pickup array" + trans.Count.ToString());
+
                 //メッセージ値だけを抽出
-                _logger.Debug(item.chat_id + ":array");
                 msga = trans.Select(mp => mp.msg).ToList();
+                _logger.Debug(item.chat_id + ":msg array " + msga.Count.ToString());
             }
             else
             {
@@ -259,6 +260,7 @@ namespace ToSTranslator
             {
                 msga.Insert(0, item.source_name);
                 with_name = true;
+                _logger.Debug(item.chat_id + ":with name");
             }
 
             //最終文字列を保存用ハッシュ値に変換
@@ -315,6 +317,7 @@ namespace ToSTranslator
                 {
                     item.translated_name = rslt[0];
                     rslt.RemoveAt(0);
+                    _logger.Debug(item.chat_id + ":after pop name count " + rslt.Count.ToString());
                 }
                 else
                 {
@@ -343,7 +346,7 @@ namespace ToSTranslator
                     //置き換えたらすべての文字を結合
                     item.translated_text = string.Join("", mpt.Select(mp => mp.msg));
 
-                    _logger.Debug(item.chat_id + ":→ " + mpt.Select(mp => mp.msg));
+                    _logger.Debug(item.chat_id + ":→ " + string.Join("", mpt.Select(mp => mp.msg)));
                 }
                 else
                 {
@@ -363,8 +366,8 @@ namespace ToSTranslator
                 }
                 else
                 {
-                    //翻訳成功していたら辞書へ
-                    dic.TryAdd(hash, string.Join("\n", rslt));
+                    //翻訳成功していたら辞書へ（名前はカット済みなので戻す）
+                    dic.TryAdd(hash, ((with_name)? item.translated_name+"\n": "") + string.Join("\n", rslt));
                     PushCount(dic.Count);
                 }
             }
